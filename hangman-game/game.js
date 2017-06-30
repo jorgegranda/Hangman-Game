@@ -114,13 +114,14 @@ $(document).ready(function() {
 
   function displayCongratulatoryMessageOnWin(){
 
-    var wins = 0;
+        
 
     var correctlyGuessedLettersCount = $(".is-letter > span").length;
 
     if (correctlyGuessedLettersCount === currentWord.length) {
 
-      $("#congratulatory_message").modal('show');
+      $("#congratulatory_message").modal('show') 
+
 
     }
 
@@ -133,7 +134,9 @@ $(document).ready(function() {
 
   function displayGameOverMessageOnLose() {
 
-    var losses = 0;
+
+    var losses = "incorrectlyGuessedLettersCount" + 1 
+
 
     var incorrectlyGuessedLettersCount = $("#letter-graveyard > div").length;
 
